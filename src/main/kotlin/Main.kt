@@ -22,9 +22,12 @@ fun main(args: Array<String>) {
     println("Pontos de Vida Inicial: ${personagem.getPontosDeVida}")
     println("***********************")
 
-    //Distribuir as habilidades utilizando o padrão de pontos
+    //Atribuir valores de habilidades por padrão de pontos
     val atributos = Atributos()
     atributos.Distribuir(personagem)
+
+    //Atribuir valores de habilidades por escolha de raça
+    anaoDaMontanha.AprimorarAtributos(personagem)
     atributos.mostrarAtributos(personagem)
 
     val distribuicaoDeAtributos = DistribuicaoDeAtributos()
